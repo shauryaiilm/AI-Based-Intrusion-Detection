@@ -1,0 +1,26 @@
+# Outputs
+output/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Pytest
+.pytest_cache/
+
+# Model weights
+*.pt
+bus.jpg
+
+# Test clips (keep README.md)
+clips/*
+!clips/README.md
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE configurations
+.idea/
+.vscode/

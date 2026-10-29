@@ -1,0 +1,51 @@
+version: 1
+model: yolo11n.pt
+classes:
+  0: person
+  2: car
+  3: motorcycle
+settings:
+  dwell_seconds: 2.0
+  grace_seconds: 1.0
+  confidence: 0.35
+  imgsz: 480
+  realtime: true
+  save_video: false
+  schedule_enabled: false
+  sim_start: '12:00'
+  popup_on_alert: true
+  sound_on_alert: true
+  max_work_width: 1280
+  output_dir: output
+zones_by_video:
+  example_clip.mp4:
+  - name: Gate
+    allowed:
+    - car
+    - motorcycle
+    active_from: null
+    active_to: null
+    points:
+    - - 0.12
+      - 0.55
+    - - 0.48
+      - 0.52
+    - - 0.52
+      - 0.93
+    - - 0.1
+      - 0.95
+  VIRAT_S_000002.mp4:
+  - name: Zone 1
+    allowed:
+    - person
+    active_from: null
+    active_to: null
+    points:
+    - - 0.5685
+      - 0.2857
+    - - 0.6727
+      - 0.3338
+    - - 0.4963
+      - 0.7012
+    - - 0.3249
+      - 0.6181
